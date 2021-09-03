@@ -1,17 +1,138 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+<head>
+<title>iCantik</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <h1 class="head"> iCantik </h1>
-  </head>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  <nav></nav>
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 20;
+  color: white;
+}
 
-  <body>
-    <script src="script.js"></script>
-  </body>
+/* Create two columns/boxes that floats next to each other */
+nav {
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  z-index:10 ;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+
+</head>
+
+
+<body>
+
+<h2>iCantik</h2>
+<p>In this Project, we have created a layout website that contain head, navigation bar, and some other stuff(soon) </p>
+<!-- <p>Responsive is coming ASAP</p> -->
+
+<header>
+  <h2>iCantiki</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#Section1">Section1</a></li>
+      <li><a href="#Section2">Section2</a></li>
+      <li><a href="#Section3">Section3</a></li>
+    </ul>
+  </nav>
+</section>
+
+<section id="Section1">
+    <h1>Section1</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</section>
+
+<section id="Section2">
+    <h1>Section2</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</section>
+
+
+<section id="Section3">
+    <h1>Section3</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+
+
 </html>
