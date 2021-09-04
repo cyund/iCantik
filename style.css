@@ -2,6 +2,7 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -257,10 +258,41 @@ h3 {
   }
 
   .about-foto {
-      width: 50%;
-
+      width: 50%; 
   }
   .img-patners {
       width: 50%;
   }
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px 50px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+} 
+
+/* Responsive card */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+#why {
+  display: inline;
 }
