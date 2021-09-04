@@ -1,79 +1,266 @@
-* {
-  box-sizing: border-box;
+*{
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 5px;
-  text-align: center;
-  font-size: 20;
-  color: white;
-  margin-top: 60px;
+.wrapper {
+  width: auto;
+  margin: auto;
+  position: relative;
 }
 
-/* Create two columns/boxes that floats next to each other */
+.logo a {
+  font-size: 50px;
+  font-weight: bold;
+  float: left;
+  font-family: courier;
+  color: #716F81;
+}
+
+.menu {
+  float: right;
+}
+
 nav {
-  position: fixed;
-  top:0;
-  left: 0;
-  background-color: #000;
   width: 100%;
-  z-index:10 ;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+  border-bottom: 1px solid #716F81 ;
 }
 
-/* Style the list inside the menu */
 nav ul {
-  display: flex;
-  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 nav ul li {
-  margin: 0 20px;
+  float: left;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
+  color: black;
   font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+#home img {
+  margin-top: 50px;
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 50px;
 }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'comic sans ms';
+  color: #716F81;
+}
+
+.kolom .deskripsi #tittle {
   text-align: center;
-  color: white;
+}
+h2 {
+  font-family: 'comic sans ms';
+  font-weight: 80px;
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #716F81;
+  width: 100%;
+  line-height: 50px;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
+a.tbl-biru{
+  background: #141E61;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #B97A95;
+  text-decoration: none;
+}
+
+a.tbl-pink{
+  background: #B97A95;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: #141E61;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.about-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-foto {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.about-foto img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.about-foto p {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #716F81;
+}
+
+.patner-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-patners {
+  width: 20px;
+  margin: 0 auto;
+}
+
+.img-patners img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#contact {
+  background: #dedede;
+  padding: 50px 0px 50px 0px;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #716F81;
+  width: 100%;
+  line-height: 50px;
+}
+
+/* #copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+} */
+
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+      width: 90%;
+  }
+  .logo{
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+  nav .menu {
+      width: 100%;
+      margin: 0px;
+  }
+
+  nav .menu ul {
+      text-align: center;
+      margin: auto;
+      line-height: 60px;
+  }
+
+  nav .menu ul li{
+      display: inline-block;
+      float: none;
+  }
+
+  section {
+      display: block;
+  }
+  section img {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+
+  .about-foto {
+      width: 50%;
+
+  }
+  .img-patners {
+      width: 50%;
   }
 }
