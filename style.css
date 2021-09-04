@@ -105,16 +105,6 @@ h2 {
   line-height: 50px;
 }
 
-a.tbl-biru{
-  background: #141E61;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 15px 20px 15px 20px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 a.tbl-biru:hover {
   background: #B97A95;
   text-decoration: none;
@@ -153,12 +143,12 @@ p {
 }
 
 .about-foto {
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
 }
 
 .about-foto img {
-  width: 50%;
+  width: 30%;
   border-radius: 50%;
 }
 
