@@ -282,8 +282,8 @@ h3 {
 
 .column {
   float: left;
-  width: 33.33%;
-  padding: 20px 50px;
+  width: 25%;
+  padding: 20px;
 }
 
 .row:after {
@@ -310,4 +310,11 @@ h3 {
 
 #why {
   display: inline;
+}
+
+img.icon {
+  width: 60px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
 }
