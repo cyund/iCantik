@@ -8,7 +8,7 @@
 body {
   margin: 50px;
   padding: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'helvetica';
 }
 
 .wrapper {
@@ -18,31 +18,68 @@ body {
 }
 
 .logo a {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   float: left;
-  font-family: courier;
+  font-family: 'comic sans ms';
   color: #716F81;
 }
 
 .menu {
   float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #000;
 }
 
 nav {
   width: 100%;
   margin: auto;
   display: flex;
-  line-height: 80px;
-  position: sticky;
-  position: -webkit-sticky;
+  line-height: 60px;
+  position: fixed;
+  position: '-webkit-sticky';
   top: 0;
   background: white;
-  z-index: 1;
+  z-index: 100;
   border-bottom: 1px solid #716F81 ;
+  transition: background-color 0.5s ease;
+  color: #141E61;
 }
 
-nav ul {
+nav.putih {
+  background-color: white;
+}
+
+nav.putih {
+  background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+nav.putih ul li a {
+  color: #333;
+}
+nav .logo img.hitam {
+  display: none;
+}
+
+
+nav .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -53,15 +90,15 @@ nav ul li {
   float: left;
 }
 
-nav ul li a {
-  color: black;
+nav .menu ul li a {
+  color: #141E61;
   font-weight: bold;
   text-align: center;
   padding: 0px 16px 0px 16px;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+nav .menu ul li a:hover {
   text-decoration: underline;
 }
 
@@ -69,14 +106,14 @@ section {
   margin: auto;
   display: flex;
   margin-bottom: 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'helvetica';
 }
 
 #home img {
   margin-top: 50px;
   max-width: 50%;
   max-height: 50%;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .kolom {
@@ -95,12 +132,13 @@ section {
 .kolom .deskripsi #tittle {
   text-align: center;
 }
+
 h2 {
   font-family: 'comic sans ms';
   font-weight: 80px;
   font-size: 45px;
   margin-bottom: 30px;
-  color: #716F81;
+  color: #141E61;
   width: 100%;
   line-height: 50px;
 }
@@ -117,36 +155,6 @@ a.tbl-biru{
 
 a.tbl-biru:hover {
   background: #B97A95;
-  text-decoration: none;
-}
-
-a.tbl-biru{
-  background: #141E61;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 15px 20px 15px 20px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-a.tbl-biru:hover {
-  background: #B97A95;
-  text-decoration: none;
-}
-
-a.tbl-pink{
-  background: #B97A95;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 10px 15px 10px 15px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-a.tbl-pink:hover {
-  background: #141E61;
   text-decoration: none;
 }
 
@@ -178,33 +186,17 @@ p {
 }
 
 .about-foto p {
-  font-family: 'comic sans ms';
+  font-family: 'helvetica';
   font-weight: 800;
   font-size: 15px;
   text-align: center;
   color: #716F81;
 }
 
-.patner-list {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.img-patners {
-  width: 20px;
-  margin: 0 auto;
-}
-
-.img-patners img {
-  width: 200px;
-  border-radius: 50%;
-}
-
 #contact {
   background: #dedede;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 50px 50px 50px;
+  display: flex;
 }
 
 .footer {
@@ -222,68 +214,19 @@ p {
 }
 
 h3 {
-  font-family: 'comic sans ms';
-  font-weight: 800;
+  font-family: 'helvetica';
+  font-weight: 100;
   font-size: 20px;
   margin-bottom: 20px;
   color: #716F81;
   width: 100%;
-  line-height: 50px;
-}
-
-/* #copyright {
-  text-align: center;
-  width: 100%;
-  padding: 50px 0px 50px 0px;
-  margin-top: 50px;
-} */
-
-@media screen and (max-width: 991.98px) {
-  .wrapper {
-      width: 90%;
-  }
-  .logo{
-      display: block;
-      width: 100%;
-      text-align: center;
-  }
-  nav .menu {
-      width: 100%;
-      margin: 0px;
-  }
-
-  nav .menu ul {
-      text-align: center;
-      margin: auto;
-      line-height: 60px;
-  }
-
-  nav .menu ul li{
-      display: inline-block;
-      float: none;
-  }
-
-  section {
-      display: block;
-  }
-  section img {
-      display: block;
-      width: 100%;
-      height: auto;
-  }
-
-  .about-foto {
-      width: 50%; 
-  }
-  .img-patners {
-      width: 50%;
-  }
+  line-height: 30px;
 }
 
 .column {
   float: left;
   width: 25%;
-  padding: 20px;
+  padding: 10px 30px;
 }
 
 .row:after {
@@ -291,7 +234,6 @@ h3 {
   display: table;
   clear: both;
 } 
-
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -310,3 +252,96 @@ img.icon {
   margin: auto;
   margin-bottom: 30px;
 }
+.formkomen {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.forminput {
+  border-radius:10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.komentar {
+  border-radius:10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+      width: 90%;
+  }
+  .logo{
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+  #home img {
+    max-width: 100%;
+  }
+  nav .menu {
+      width: 100%;
+      margin: 0px;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .menu ul li{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+
+  nav .menu ul li a {
+    color: #333;
+  }
+  section {
+      display: block;
+  }
+  section img {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+
+  a.tbl-biru{
+    display: block;
+    width: 50%;
+  }
+
+  .about-foto {
+      width: 50%; 
+  }
+
+  .column {
+    display: block;
+    width: 30%;
+    padding: 10px 30px;
+  }
+}
+
