@@ -31,6 +31,7 @@ body {
   max-width: 600px;
 }
 
+
 .tombol-menu {
   position: absolute;
   top: 1.7rem;
@@ -97,7 +98,12 @@ nav .menu ul li a {
   padding: 0px 16px 0px 16px;
   text-decoration: none;
 }
-
+.search {
+  border-radius:10px;
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
 nav .menu ul li a:hover {
   text-decoration: underline;
 }
@@ -252,6 +258,9 @@ img.icon {
   margin: auto;
   margin-bottom: 30px;
 }
+img.image-contact {
+  width: 100px;
+}
 .formkomen {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -259,7 +268,15 @@ img.icon {
   padding: 20px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
-
+.tombol {
+  background: #141E61;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
 .forminput {
   border-radius:10px;
   width: 100%;
