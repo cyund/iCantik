@@ -178,6 +178,10 @@ section {
   font-size: 1.1rem;
 }
 
+#home{
+  display: flex;
+  padding: 100px 0;
+}
 
 #home img {
   margin-top: 50px;
@@ -295,7 +299,7 @@ h3 {
 
 .column {
   float: left;
-  width: 25%;
+  width: 33.3%;
   padding: 10px 30px;
 }
 
@@ -305,11 +309,18 @@ h3 {
   clear: both;
 } 
 
+#tittle-why {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: left;
   background-color: #f1f1f1;
+  height: 400px;
 }
 
 #why {
@@ -319,7 +330,6 @@ h3 {
 img.icon {
   width: 60px;
   display: block;
-  margin: auto;
   margin-bottom: 30px;
 }
 img.image-contact {
