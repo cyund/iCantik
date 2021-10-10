@@ -331,7 +331,7 @@ img.icon {
 img.image-contact {
   width: 100px;
 }
-.formkomen {
+/* .formkomen {
   border-radius: 5px;
   background-color: #f2f2f2;
   margin-left: 20px;
@@ -368,6 +368,23 @@ img.image-contact {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+} */
+
+.footer {
+  background-color: #263238;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-top: 125px;
+}
+
+.kontak .teks {
+  color:#fff;
+  padding: 20px;
+}
+
+.teks-kontak .contactus p {
+  margin: 5px;
+  color: white;
 }
 
 @media screen and (max-width: 991.98px) {
