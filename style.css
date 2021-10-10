@@ -431,6 +431,23 @@ img.image-contact {
   resize: vertical;
 }
 
+.footer {
+  background-color: #263238;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin-top: 125px;
+}
+
+.kontak .teks {
+  color:#fff;
+  padding: 20px;
+}
+
+.teks-kontak .contactus p {
+  margin: 5px;
+  color: white;
+}
+
 @media screen and (max-width: 991.98px) {
   .wrapper {
     width: 90%;
