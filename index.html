@@ -2,73 +2,90 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>iCantik</title>
-	<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>iCantik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+    <!-- lightslider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-	<nav>
-		<div class="wrapper">
-			<div class="logo"><a href="">iCantik</a></div>
-			<div class="menu">
-				<a href="#" class="tombol-menu">
-					<span class="garis"></span>
-              <span class="garis"></span>
-              <span class="garis"></span>
+    <nav class="navbar navbar-expand-lg navbar-light  navbarHome fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <!-- <img src="images/logo.png" alt="iCantik"> -->
+                <h1>iCantik</h1>
             </a>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="project.html">Project</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li>
-                      <form method="post" action="#URL#">
-                       <input class= 'search' type="search" name="search" />
-                       <button class="tbl-search" type="submit">
-                      </form>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  
-  <div class="iconBox">
-    <a href="" class="perIconBox wa">
-        <svg class="svg-inline--fa fa-whatsapp fa-w-14" aria-hidden="true" focusable="false" 
-        data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg><!-- <i class="fab fa-whatsapp"></i> Font Awesome fontawesome.com -->
-    </a>
 
-    <a href="" class="perIconBox fb">
-        <svg class="svg-inline--fa fa-facebook-f fa-w-10" aria-hidden="true" focusable="false" 
-        data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="fab fa-facebook-f"></i> Font Awesome fontawesome.com -->
-    </a>
+            <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <a href="" class="perIconBox ig">
-        <svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" focusable="false" 
-        data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram"></i> Font Awesome fontawesome.com -->
-    </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
-    <a href="" class="perIconBox yt">
-        <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false" 
-        data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fab fa-youtube"></i> Font Awesome fontawesome.com -->
-    </a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
 
-    <a href="" class="perIconBox linkin">
-        <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" focusable="false" 
-        data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com -->
-    </a>
-</div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href=#about>About</a>
+                    </li>
 
-  <!--slide-->
-  <ul id="autoWidth" class="cs-hidden">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=#contact>Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+
+                    <input class="form-control sm-2" type="search" placeholder="Cari" aria-label="Search">
+
+                    <button class="btn btn-primary sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+<!--slide-->
+<ul id="autoWidth" class="cs-hidden">
     <li class="item-a">
         <section class="slideshow">
             <img class="satu" src="img/banner-shd.png" alt="Team Work">
@@ -135,143 +152,270 @@
 </ul>
 
 
-  <div class="wrapper">
-      <!-- home -->
-      <section id="home">
-          <img src="img/us.jpg" alt="iCantik Team"/>
-          <div class="kolom">
-              <p class="subtittle">
-                  <h2 id="tittle">iCantik</h2>
-                  <h3>Icantik merupakan sebuah team yang dapat membantu anda dalam berbagai hal seperti membuat website, membuat aplikasi, dan lainnya</h3>
-              </p>
-          </div>
-      </section>
-      <!-- END HOME -->
-  
-      <!-- WHY -->
-      <section id="why">
-          <div class="kolom">
-              <h2 id="tittle-why">Why work with us</h2>
-              <div class="row">
-                  <div class="column">
-                    <div class="card">
-                        <img class="icon" src="img/team.png" alt=""/>
-                        <h3>We're All in this together</h3>
-                        <p>his website was built by 6 pairs of hands who have one vision in every work. 
-                        With different abilities, this website is expected to be a role model for other groups.</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="card">
-                      <img class="icon" src="img/signboard.svg" alt=""/>
-                      <h3>We shape our Direction</h3>
-                      <p>We always work on projects in a directed manner so that we can create a satisfying project</p>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="card">
-                      <img class="icon" src="img/sound-recognition.svg" alt=""/>
-                      <h3>We're Really Sound!</h3>
-                      <p>we have won many awards using our own work so that our work is widely known by many people</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <!-- END WHY -->
-    
-      <!-- About -->
-      <section id="about">
-        <div class="tengah">
-              <div class="kolom">
-                  <p class="deskripsi"><h2>About Us</h2></p>
-                  <h5>iCantik is a group name from the 19th batch of informatics major. 
-                  Made based on a strong determination and desire to achieve the best value in the Web Design course. 
-                  Even though each group member is separated by distance, but with the same goal, 
-                  we are able to make us enthusiastic in studying this course.</h5>
-              </div>
-  
-              <div class="about-list">
-                  <div class="about-foto">
-                      <a><img src="img/02.jpg"/></a>                        
-                      <p><a href="https://www.instagram.com/achsanit/" target="_blank" class="tbl-biru">Achsanie Taqwim</a></p>
-                  </div> 
-  
-                  <div class="about-foto">
-                      <a><img src="img/06.png"/></a>                        
-                      <p><a href="https://www.instagram.com/alan.kartika/" target="_blank" class="tbl-biru">Alan Kartika Chandra</a></p>
-                  </div> 
-  
-                  <div class="about-foto">
-                      <a><img src="img/15.jpeg"/></a>                        
-                      <p><a href="https://www.instagram.com/benny_benn0t/" target="_blank" class="tbl-biru">Benny Seto</a></p>
-                  </div> 
-  
-                  <div class="about-foto">
-                      <a><img src="img/30.jpeg"/></a>                        
-                      <p><a href="https://www.instagram.com/indra_lkmnn/" target="_blank" class="tbl-biru">Indra Cyundink</a></p>
-                  </div>
-  
-                  <div class="about-foto">
-                      <a><img src="img/42.jpg"/></a> 
-                      <p><a href="https://www.instagram.com/mrtzmardhatillah/" target="_blank" class="tbl-biru">Maritza Mardhatillah</a></p>
-                  </div>
-  
-                  <div class="about-foto">
-                      <a><img src="img/60.jpg"/></a> 
-                      <p><a href="https://www.instagram.com/saptiaputri/" target="_blank" class="tbl-biru">Putri Saptia</a></p>
-                  </div>
-              </div>
-          </div>
-      </section>
-  </div>
 
-  <!-- Footer -->
+
+
+
+
+    <div class="sambutan">
+        <h1 id="tittle">WELCOME TO iCantik</h1>
+        <p>
+            Icantik merupakan sebuah team yang dapat membantu anda dalam berbagai hal seperti membuat website, membuat aplikasi, dan lainnya
+        </p>
+    </div>
+
+
+    <div class="abouut">
+        <div class="container">
+            <img src="img/us.jpg" alt="iCantik Team">
+
+            <div class="visiMisi">
+
+                <div class="visi">
+                    <h5>Our Vision</h5>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </div>
+
+                <div class="misi">
+                    <h5>Our Mission</h5>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet cum id reiciendis laudantium esse
+                        fuga quo ullam possimus illum eum, quibusdam officiis perspiciatis aperiam sed sapiente incidunt
+                        sit veritatis fugiat quisquam eius odit. Iste sunt eius quos, earum harum cumque, quia quo,
+                        ipsam iusto enim inventore cupiditate nesciunt quisquam dolore!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- WHY -->
+    <div class="why">
+        <div class="container">
+            <h2>Why work with us</h2>
+
+            <div class="boxwhy">
+
+                <div class="perBox">
+                    <img src="img/together.jpg" alt="together">
+                    <h3>We're All in this together</h3>
+                </div>
+
+                <div class="perBox">
+                    <img src="img/direction.jpg" alt="direction">
+                    <h3>We shape our Direction</h3>
+                </div>
+
+                <div class="perBox">
+                    <img src="img/sound.jpg" alt="sound">
+                    <h3>We're Really Sound!</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+   <!-- about -->
+   <div class="about" id="about">
+    <div class="container">
+        <h2>Meet our members</h2>
+
+        <div class="boxabout">
+
+            <div class="perBox">
+                <a href="https://www.instagram.com/achsanit/" target="_blank">
+                    <img src="img/02.jpg" alt="benny_benn0t" class="album-img">
+                    <div class="album-overlay">
+                      <div class="album-title">Achsanie Taqwim</div>
+                </div>
+            </a>                
+            </div>
+
+            <div class="perBox">
+                <a href="https://www.instagram.com/alan.kartika/" target="_blank">
+                    <img src="img/06.png" alt="benny_benn0t" class="album-img">
+                    <div class="album-overlay">
+                      <div class="album-title">Alan Kartika Chandra</div>
+                </div>
+            </a>
+            </div>
+
+            <div class="perBox">
+                <a href="https://www.instagram.com/benny_benn0t/" target="_blank">
+                    <img src="img/15.jpeg" alt="benny_benn0t" class="album-img">
+                    <div class="album-overlay">
+                      <div class="album-title">Benny Seto</div>
+                </div>
+            </a>
+            </div>
+            
+            <div class="perBox">
+                <a href="https://www.instagram.com/indra_lkmnn/" target="_blank">
+                    <img src="img/30.jpeg" alt="benny_benn0t" class="album-img">
+                    <div class="album-overlay">
+                      <div class="album-title">Indra Cyundink</div>
+                </div>
+            </a>
+            </div>
+
+            <div class="perBox">
+                <a href="https://www.instagram.com/mrtzmardhatillah/" target="_blank">
+                    <img src="img/42.jpg" alt="benny_benn0t" class="album-img">
+                    <div class="album-overlay">
+                      <div class="album-title">Maritza Mardhatillah</div>
+                </div>
+            </a>
+            </div>
+
+            <div class="perBox">
+                <a href="https://www.instagram.com/saptiaputri/" target="_blank">
+                    <img src="img/60.jpg" alt="benny_benn0t" class="album-img">
+                    <div class="album-overlay">
+                      <div class="album-title">Putri Saptia</div>
+                </div>
+                </a>
+            </div>
+                
+
+        </div>
+    </div>
+</div>
+
+
+    <div class="containerProjectHome container">
+        <a href="project.html"><h2>Latest Project</h2></a>
+
+        <div class="ProjectHome">
+
+
+            <a class="perProjectHome">
+                <img src="img/uiux.jpg" alt="Foto Artikel">
+                <h3>UI/UX Design</h3>
+                <small>Project Manager : <span>Maritza Mardhatillah</span></small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus explicabo
+                    delectus quasi amet libero iusto sequi at.
+                </p>
+            </a>
+            
+            <a class="perProjectHome">
+                <img src="img/uiux.jpg" alt="Foto Artikel">
+                <h3>Perancangan Perangkat Lunak</h3>
+                <small>Project Manager : <span>Maritza Mardhatillah</span></small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus explicabo
+                    delectus quasi amet libero iusto sequi at.
+                </p>
+            </a>
+            <a class="perProjectHome">
+                <img src="img/uiux.jpg" alt="Foto Artikel">
+                <h3>Web Design</h3>
+                <small>Project Manager : <span>Maritza Mardhatillah</span></small>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti quo, iure repellendus explicabo
+                    delectus quasi amet libero iusto sequi at.
+                </p>
+            </a>
+
+
+        </div>
+    </div>
+
+
+    <!-- sosmed icon -->
+    <div class="iconBox">
+        <a href="" class="perIconBox wa">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="" class="perIconBox fb">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="" class="perIconBox ig">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="" class="perIconBox yt">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="" class="perIconBox linkin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
 
     <div class="footer">
 
-      <div class="container">
-          <div class="kontak">
-              <h4 class="teks">Contact Us</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="contact">
+                    <h4 class="my-4 text-white text-center">Contact Us</h4>
 
-                  <div class="teks-kontak">
+                    <div class="footerContactUs">
 
-                      <div class="contactus">
-                          <p>iCantikOfficial@gmail.com</p>
-                      </div>
+                        <div class="perFooterContactUs">
+                            <i class="fas text-white fa-envelope"></i>
+                            <p class="text-white">official@Icantik.co.id</p>
+                        </div>
 
-                      <div class="contactus">
-                          <p>081257756223</p>
-                      </div>
+                        <div class="perFooterContactUs">
+                            <i class="fas text-white fa-phone-alt"></i>
+                            <p class="text-white">023423434234</p>
+                        </div>
 
-                      <div class="contactus">
-                          <p>Balikpapan Utara</p>
-                      </div>
+                        <div class="perFooterContactUs">
+                            <i class="fas text-white fa-road"></i>
+                            <p class="text-white">Jl. Mulawarman, Kec. Balikpapan Timur - Kota Balikpapan</p>
+                        </div>
 
-                  </div>
-              </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 text-center">
+                    <h4 class="my-4 text-white">Newsletter</h4>
+                    <form>
+
+                        <div class="form-group">
+                            <input class="form-control" type="search" placeholder="Example@gmail.com"
+                                aria-label="Search">
+                            <button class="btn btn-primary btn-newsletter" type="submit">Kirim</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <!-- boot -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 
-    <!-- lightslider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="javascript.js"></script>
 
-  </body>
+
+
+
+
+
+
+
+    <div class="footerCopyright">
+        <p class="text-white">
+            <i class="far fa-copyright"></i>2021 By : <span>Kelompok 2 Desain Web</span>.&nbsp; Inspired by <a
+                href="https://smkn2balikpapan.sch.id/website/">SMKN 2               Balikpapan</a>
+        </p>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
 </html>
