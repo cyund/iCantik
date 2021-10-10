@@ -1,4 +1,4 @@
-*{
+* {
   text-decoration: none;
   margin: 0px;
   padding: 0px;
@@ -22,7 +22,7 @@ body {
   font-weight: bold;
   float: left;
   font-family: 'comic sans ms';
-  color: #716F81;
+  color: #716f81;
 }
 
 .menu {
@@ -30,7 +30,6 @@ body {
   height: 60px;
   max-width: 600px;
 }
-
 
 .tombol-menu {
   position: absolute;
@@ -57,11 +56,10 @@ nav {
   top: 0;
   background: white;
   z-index: 100;
-  border-bottom: 1px solid #716F81 ;
+  border-bottom: 1px solid #716f81;
   transition: background-color 0.5s ease;
-  color: #141E61;
+  color: #141e61;
 }
-
 
 nav .menu ul {
   list-style-type: none;
@@ -75,27 +73,26 @@ nav ul li {
 }
 
 nav .menu ul li a {
-  color: #141E61;
+  color: #141e61;
   font-weight: bold;
   text-align: center;
   padding: 0px 16px 0px 16px;
   text-decoration: none;
 }
 .search {
-  border-radius:10px;
+  border-radius: 10px;
   width: 200px;
   height: 30px;
   padding: 10px;
   border: 1px solid #ccc;
 }
 .tbl-search {
-  background: #141E61;
+  background: #141e61;
   border-radius: 20px;
   width: 50px;
   height: 30px;
   padding: 8px;
   cursor: pointer;
- 
 }
 
 nav .menu ul li a:hover {
@@ -124,21 +121,20 @@ section {
 }
 
 .slideshow .satu {
-  background-image: url("img/Business.jpg");
+  background-image: url('img/Business.jpg');
 }
 
 .slideshow .dua {
-  background-image: url("img/code.jpg");
+  background-image: url('img/code.jpg');
 }
 
 .slideshow .tiga {
-  background-image: url("img/bahasa.jpg");
+  background-image: url('img/bahasa.jpg');
 }
 
 .slideshow .empat {
-  background-image: url("img/uiux.jpg");
+  background-image: url('img/uiux.jpg');
 }
-
 
 .slideshow .container {
   position: absolute;
@@ -155,7 +151,7 @@ section {
   width: 7px;
   height: 80px;
   border-radius: 10px;
-  background-color: #B97A95;
+  background-color: #b97a95;
 }
 
 .slideshow .container .mainText h3 {
@@ -178,7 +174,7 @@ section {
   font-size: 1.1rem;
 }
 
-#home{
+#home {
   display: flex;
   padding: 100px 0;
 }
@@ -200,7 +196,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   font-family: 'comic sans ms';
-  color: #716F81;
+  color: #716f81;
 }
 
 .kolom .deskripsi #tittle {
@@ -212,13 +208,13 @@ h2 {
   font-weight: 80px;
   font-size: 45px;
   margin-bottom: 30px;
-  color: #141E61;
+  color: #141e61;
   width: 100%;
   line-height: 50px;
 }
 
-a.tbl-biru{
-  background: #141E61;
+a.tbl-biru {
+  background: #141e61;
   border-radius: 20px;
   margin-top: 20px;
   padding: 15px 20px 15px 20px;
@@ -228,7 +224,7 @@ a.tbl-biru{
 }
 
 a.tbl-biru:hover {
-  background: #B97A95;
+  background: #b97a95;
   text-decoration: none;
 }
 
@@ -264,7 +260,7 @@ p {
   font-weight: 800;
   font-size: 15px;
   text-align: center;
-  color: #716F81;
+  color: #716f81;
 }
 
 #contact {
@@ -292,7 +288,7 @@ h3 {
   font-weight: 100;
   font-size: 20px;
   margin-bottom: 20px;
-  color: #716F81;
+  color: #716f81;
   width: 100%;
   line-height: 30px;
 }
@@ -307,7 +303,7 @@ h3 {
   content: '';
   display: table;
   clear: both;
-} 
+}
 
 #tittle-why {
   text-align: center;
@@ -343,7 +339,7 @@ img.image-contact {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 .tombol {
-  background: #141E61;
+  background: #141e61;
   width: auto;
   border-radius: 20px;
   margin-top: 20px;
@@ -353,7 +349,7 @@ img.image-contact {
   font-weight: bold;
 }
 .forminput {
-  border-radius:10px;
+  border-radius: 10px;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -364,7 +360,7 @@ img.image-contact {
 }
 
 .komentar {
-  border-radius:10px;
+  border-radius: 10px;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -374,15 +370,14 @@ img.image-contact {
   resize: vertical;
 }
 
-
 @media screen and (max-width: 991.98px) {
   .wrapper {
-      width: 90%;
+    width: 90%;
   }
-  .logo{
-      display: block;
-      width: 100%;
-      text-align: center;
+  .logo {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
   .tombol-menu {
     display: flex;
@@ -391,8 +386,8 @@ img.image-contact {
     max-width: 100%;
   }
   nav .menu {
-      width: auto;
-      margin: 0px;
+    width: auto;
+    margin: 0px;
   }
   nav .menu ul {
     display: none;
@@ -402,7 +397,7 @@ img.image-contact {
     left: 0;
     width: 100%;
   }
-  nav .menu ul li{
+  nav .menu ul li {
     width: 100%;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
@@ -413,21 +408,21 @@ img.image-contact {
     color: #333;
   }
   section {
-      display: block;
+    display: block;
   }
   section img {
-      display: block;
-      width: 100%;
-      height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
-  a.tbl-biru{
+  a.tbl-biru {
     display: block;
     width: 50%;
   }
 
   .about-foto {
-      width: 50%; 
+    width: 50%;
   }
 
   .column {
@@ -437,3 +432,24 @@ img.image-contact {
   }
 }
 
+/* project */
+.title-project {
+  margin: 30px 0 30px 200px;
+}
+.img-project {
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.titleArtikel {
+  margin-top: 80px;
+  color: #716f81;
+}
+.artikel .perArtikel {
+  margin: 20px;
+  display: flex;
+}
+.textArtikel {
+  text-decoration: none;
+  color: #000;
+}
