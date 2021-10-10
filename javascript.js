@@ -36,14 +36,9 @@ $(document).ready(function () {
       auto: true,
       item: 1,
       slideMargin: 0,
-      loop: true
+      loop: true,
+      speed: 600,
+      pause: 4000
     });
   });
   
-  const navbarHome = document.querySelector(".navbarHome");
-  
-  window.addEventListener("scroll", () => {
-    const post = window.scrollY > 100;
-  
-    navbarHome.classList.toggle("scroll", post);
-  });
